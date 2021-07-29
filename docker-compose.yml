@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    image: "mariadb:latest"
+    container_name: db
+    volumes:
+      - mydb:/var/lib/mysql
+    env_file: 
+      - app.env
+    networks:
+      - spring_net
+      
+  app:
+    build: .
+    container_name: app
+    ports:
+      - 8080:8080
+    networks:
+      - spring_net
+    env_file:
+      - app.env
+    environment:
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=${SPRING_JPA_HIBERNATE_DDL_AUTO}
+    depends_on:
+      - db
+      
+networks:
+  spring_net:
+
+volumes: 
+  mydb:

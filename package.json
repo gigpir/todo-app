@@ -1,0 +1,58 @@
+{
+  "name": "spring-vue3-template",
+  "version": "0.0.1",
+  "description": "Spring + Vue3 template",
+  "private": true,
+  "scripts": {
+    "install": "(cd client && npm install) && (cd server && mvn install)",
+    "start": "node scripts/start.js",
+    "build": "(node scripts/build-client.js) && (cd server && mvn package)",
+    "lint": "(cd client && npm run lint)",
+    "fix": "(cd client && npm run fix)",
+    "lint-local": "npx eslint -f codeframe --resolve-plugins-relative-to . scripts/ api-testing/",
+    "fix-local": "npx eslint -f codeframe --fix --resolve-plugins-relative-to . scripts/ api-testing/",
+    "docker-build": "node scripts/docker-build.js",
+    "docker-up": "node scripts/docker-up.js",
+    "docker-stop": "node scripts/docker-stop.js",
+    "docker-start": "node scripts/docker-start.js",
+    "docker-down": "node scripts/docker-down.js",
+    "test": "node api-testing/main.js",
+    "docker-test": "node api-testing/docker-main.js"
+  },
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [],
+  "license": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "javascript",
+    "vue",
+    "tailwind"
+  ],
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "mocha": "^8.4.0",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "chalk": "^4.1.1",
+    "dotenv": "^9.0.2",
+    "execa": "^5.0.0",
+    "listr2": "^3.8.2",
+    "ora": "^5.4.0",
+    "portfinder": "^1.0.28",
+    "strip-ansi": "^6.0.0",
+    "wait-on": "^5.3.0",
+    "xml2js": "^0.4.23"
+  }
+}
