@@ -83,10 +83,10 @@ Body:
 
 ```json
 {
-	"firstName": "John",
-	"lastName": "Foe",
+  "firstName": "John",
+  "lastName": "Foe",
   "username": "johnfoe",
-  "email": "johnfoe@todo.it"
+  "email": "johnfoe@todo.it",
   "password": "xxxxxxxx"
 }
 ```
@@ -97,7 +97,7 @@ Success:
 
 ```json
 {
-	"id": 1,
+  "id": 1,
 	"firstName": "John",
 	"lastName": "Foe",
   "username": "johnfoe",
@@ -130,7 +130,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/admin"
+    "path": "/api/v1/admin"
   }
   ```
 
@@ -198,7 +198,7 @@ Success:
 
   ```json
   {
-  	"id": 1,
+    "id": 1,
   	"firstName": "John",
   	"lastName": "Foe",
     "username": "johnfoe",

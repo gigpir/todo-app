@@ -6,6 +6,11 @@ Contains all the functions that operate on the **Todo** entity
 
 ### Logic
 
+- Set Todo **title**
+- Set Todo **description**
+- Set **done** as **false**
+- Save new todo
+
 ### Authorization
 
 Todoer: ROLE_TODOER

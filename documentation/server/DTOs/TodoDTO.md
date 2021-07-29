@@ -16,5 +16,6 @@ public class Todo {
   private String description;
   
   private Boolean done;
+}
 ```
 

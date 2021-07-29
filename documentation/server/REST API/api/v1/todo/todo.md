@@ -354,7 +354,7 @@ Summary:
 - **404:** todo is not found
 - **500:** Internal server error 
 
-## /{todoId}/true 
+## /{todoId}/done
 
 ### PUT
 
@@ -440,7 +440,7 @@ Summary:
 
 ### 
 
-## /{todoId}/false
+## /{todoId}/reset
 
 ### PUT
 
@@ -523,7 +523,3 @@ Summary:
 - **403:** User has no permission to access to the resource
 - **404:** todo is not found
 - **500:** Internal server error 
-
-### 
-
-## 
