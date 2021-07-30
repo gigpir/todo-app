@@ -18,7 +18,7 @@ Success:
     "lastName": "Foe",
     "username": "johnfoe",
     "email": "johnfoe@todo.it"
-	},
+  },
   {
     "id": 2,
     "firstName": "Boris",
@@ -83,8 +83,8 @@ Body:
 
 ```json
 {
-	"firstName": "John",
-	"lastName": "Foe",
+  "firstName": "John",
+  "lastName": "Foe",
   "username": "johnfoe",
   "email": "johnfoe@todo.it"
   "password": "xxxxxxxx"
@@ -99,9 +99,9 @@ Success:
 
 ```json
 {
-	"id": 1,
-	"firstName": "John",
-	"lastName": "Foe",
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Foe",
   "username": "johnfoe",
   "email": "johnfoe@todo.it"
 }
@@ -117,13 +117,11 @@ List of error codes:
     "status": 400,
     "error": "Bad Request",
     "message": "User's firstName cannot be empty",
-    "validationErrors": [
-      "User's firstName cannot be empty"
-    ],
+    "validationErrors": [ "User's firstName cannot be empty" ],
     "path": "/api/v1/todoer"
   }
   ```
-
+  
 - **409:** username and/or email are already used
 
   ```json
@@ -132,7 +130,7 @@ List of error codes:
     "status": 409,
     "error": "Conflict",
     "message": "Username and/or email already used",
-  	"path": "/api/v1/todoer"
+    "path": "/api/v1/todoer"
   }
   ```
 
@@ -168,9 +166,9 @@ Success:
 
   ```json
   {
-  	"id": 1,
-  	"firstName": "John",
-  	"lastName": "Foe",
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Foe",
     "username": "johnfoe",
     "email": "johnfoe@todo.it"
   }
@@ -188,7 +186,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -202,7 +200,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -216,7 +214,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todoer not found",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -253,9 +251,9 @@ Success:
 
   ```json
   {
-  	"id": 1,
-  	"firstName": "John",
-  	"lastName": "Foe",
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Foe",
     "username": "johnfoe",
     "email": "johnfoe@todo.it"
   }
@@ -271,7 +269,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -285,7 +283,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -299,7 +297,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todoer not found",
-  	"path": "/api/v1/todoer/2"
+    "path": "/api/v1/todoer/2"
   }
   ```
 
@@ -346,7 +344,7 @@ Success:
   },
   {
     "id": 2,
-    "title": "Food"
+    "title": "Food",
     "description": "Buy food",
     "done": false
   }
