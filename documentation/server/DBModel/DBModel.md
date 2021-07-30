@@ -77,9 +77,9 @@ public class Todoer extends User {
 @AllArgsConstructor
 @NoArgsConstructor
 public class Todo {
-	@Id
-	@GeneratedValue
-	private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
   
   private String title;
   
@@ -87,12 +87,12 @@ public class Todo {
   
   private Boolean done;
     
-	/**
-	* One-to-One relationship between SurveyTemplate and Class
-	*/
+  /**
+  * One-to-One relationship between SurveyTemplate and Class
+  */
   @OneToOne
   @JoinColumn(name = "user_id", referencedColumnName = "id")
-	private User userObj = null;
+  private User userObj = null;
 }
 ```
 
