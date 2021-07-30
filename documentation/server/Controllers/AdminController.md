@@ -14,7 +14,7 @@ public class AdminController{
 
 Return the list of admins.
 
-It handles the **GET** request to the endpoint **/** ([REST API documentation](../REST API/api/v1/admin/admin.md#-))
+It handles the **GET** request to the endpoint **/** [REST API documentation](../REST API/api/v1/admin/admin.md#-)
 
 ### Logic
 
@@ -29,7 +29,7 @@ public List<AdminDTO> getAllAdmins()
 
 Create a new admin.
 
-Handle the **POST** request  to the endpoint **/** ([REST API documentation](../REST API/api/v1/admin/admin.md#-))
+Handle the **POST** request  to the endpoint **/** [REST API documentation](../REST API/api/v1/admin/admin.md#-)
 
 ### Logic
 
@@ -50,7 +50,7 @@ public AdminDTO createAdmin(@Valid @RequestBody AdminDTO adminDTO)
 
 Return the details about one admin
 
-Handle the **GET** request to the endpoint **/{adminId}** ([REST API documentation](../REST API/api/v1/admin/admin.md#--adminid-))
+Handle the **GET** request to the endpoint **/{adminId}** [REST API documentation](../REST API/api/v1/admin/admin.md#--adminid-)
 
 ### Logic
 
@@ -71,7 +71,7 @@ public AdminDTO getAdmin(@PathVariable ("adminId") Long adminId)
 
 Delete one admin 
 
-Handle the **DELETE** request to the endpoint **/{adminId}** ([REST API documentation](../REST API/api/v1/admin/admin.md#--adminid-))
+Handle the **DELETE** request to the endpoint **/{adminId}** [REST API documentation](../REST API/api/v1/admin/admin.md#--adminid-)
 
 ### Logic
 
