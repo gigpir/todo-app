@@ -313,7 +313,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 
@@ -327,7 +327,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Admin not found",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 

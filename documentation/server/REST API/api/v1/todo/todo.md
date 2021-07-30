@@ -38,13 +38,11 @@ List of error codes:
     "status": 400,
     "error": "Bad Request",
     "message": "title cannot be empty",
-    "validationErrors": [
-      "title cannot be empty"
-    ],
+    "validationErrors": [ "title cannot be empty" ],
     "path": "/api/v1/todo"
   }
   ```
-
+  
 - **401:** user is not logged in
 
   ```json
@@ -53,7 +51,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo"
+    "path": "/api/v1/todo"
   }
   ```
 
@@ -65,7 +63,7 @@ List of error codes:
     "status": 500,
     "error": "Internal server error",
     "message": "Internal server error",
-    "path": "/api/v1/todoer"
+    "path": "/api/v1/todo"
   }
   ```
 
@@ -108,7 +106,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -122,7 +120,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -136,7 +134,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todo not found",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -190,7 +188,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -204,7 +202,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -218,7 +216,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todo not found",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -283,13 +281,11 @@ List of error codes:
     "status": 400,
     "error": "Bad Request",
     "message": "title cannot be empty",
-    "validationErrors": [
-      "title cannot be empty"
-    ],
+    "validationErrors": [ "title cannot be empty" ],
     "path": "/api/v1/todo/2"
   }
   ```
-
+  
 - **401:** user is not logged in
 
   ```json
@@ -298,7 +294,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -312,7 +308,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
@@ -383,7 +379,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo/2/true"
+    "path": "/api/v1/todo/2/done"
   }
   ```
 
@@ -397,7 +393,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todo/2/true"
+    "path": "/api/v1/todo/2/done"
   }
   ```
 
@@ -411,7 +407,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todo not found",
-  	"path": "/api/v1/todo/2/true"
+    "path": "/api/v1/todo/2/done"
   }
   ```
 
@@ -425,7 +421,7 @@ List of error codes:
     "status": 500,
     "error": "Internal server error",
     "message": "Internal server error",
-    "path": "/api/v1/todo/2/true"
+    "path": "/api/v1/todo/2/done"
   }
   ```
 
@@ -469,7 +465,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/todo/2/false"
+    "path": "/api/v1/todo/2/reset"
   }
   ```
 
@@ -483,7 +479,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/todo/2/false"
+    "path": "/api/v1/todo/2/reset"
   }
   ```
 
@@ -497,7 +493,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todo not found",
-  	"path": "/api/v1/todo/2/false"
+    "path": "/api/v1/todo/2/reset"
   }
   ```
 
@@ -511,7 +507,7 @@ List of error codes:
     "status": 500,
     "error": "Internal server error",
     "message": "Internal server error",
-    "path": "/api/v1/todo/2/false"
+    "path": "/api/v1/todo/2/reset"
   }
   ```
 
