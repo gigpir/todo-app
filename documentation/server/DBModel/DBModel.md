@@ -18,26 +18,26 @@
         discriminatorType = DiscriminatorType.STRING)
 @DiscriminatorValue(value = "ROLE_USER")
 public class User {
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
     
-    @NotEmpty
-    private String firstName;
+  @NotEmpty
+  private String firstName;
+  
+  @NotEmpty
+  private String lastName;
     
-    @NotEmpty
-    private String lastName;
+  @NotEmpty
+  @Column(unique = true)
+  private String username;
     
-    @NotEmpty
-    @Column(unique = true)
-    private String username;
+  @NotEmpty
+  @Column(unique = true)
+  private String email;
     
-    @NotEmpty
-    @Column(unique = true)
-    private String email;
-    
-    @NotEmpty
-    private String password;
+  @NotEmpty
+  private String password;
 }
 ```
 
