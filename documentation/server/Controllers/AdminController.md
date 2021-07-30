@@ -37,7 +37,7 @@ Call the method `createAdmin()` of the [AdminService](../Services/AdminService.m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* [UsernameAlreadyExistException](../Services/Exceptions/UsernameAlreadyExistException.md#-), [EmailAlreadyUsedException](../Services/Exceptions/EmailAlreadyUsedException.md#-) -> **409**
+* [UsernameAlreadyExistException](../Services/Exceptions/UsernameAlreadyExistException.md#-), [EmailAlreadyExistException](../Services/Exceptions/EmailAlreadyExistException.md#-) -> **409**
 
 ```java
 @PostMapping("/")
