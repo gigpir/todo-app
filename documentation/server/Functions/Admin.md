@@ -22,5 +22,5 @@
 - **Get one** Todo
 - **Set Todo** as done
 - **Reset** Todo
-- **Modify** Todo
+- **Update** Todo title and description
 - **Get all** Todos of a Todoer

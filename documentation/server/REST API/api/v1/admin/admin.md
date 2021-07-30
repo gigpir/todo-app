@@ -98,8 +98,8 @@ Success:
 ```json
 {
   "id": 1,
-	"firstName": "John",
-	"lastName": "Foe",
+  "firstName": "John",
+  "lastName": "Foe",
   "username": "johnfoe",
   "email": "johnfoe@todo.it"
 }
@@ -115,13 +115,11 @@ List of error codes:
     "status": 400,
     "error": "Bad Request",
     "message": "User's firstName cannot be empty",
-    "validationErrors": [
-      "User's firstName cannot be empty"
-    ],
+    "validationErrors": [ "User's firstName cannot be empty" ],
     "path": "/api/v1/admin"
   }
   ```
-
+  
 - **401:** user is not logged in
 
   ```json
@@ -144,7 +142,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/admin"
+    "path": "/api/v1/admin"
   }
   ```
 
@@ -158,7 +156,7 @@ List of error codes:
     "status": 409,
     "error": "Conflict",
     "message": "Username and/or email already used",
-  	"path": "/api/v1/admin"
+    "path": "/api/v1/admin"
   }
   ```
 
@@ -199,8 +197,8 @@ Success:
   ```json
   {
     "id": 1,
-  	"firstName": "John",
-  	"lastName": "Foe",
+    "firstName": "John",
+    "lastName": "Foe",
     "username": "johnfoe",
     "email": "johnfoe@todo.it"
   }
@@ -218,7 +216,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 
@@ -232,7 +230,7 @@ List of error codes:
     "status": 403,
     "error": "Forbidden",
     "message": "Access denied",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 
@@ -246,7 +244,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Admin not found",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 
@@ -283,9 +281,9 @@ Success:
 
   ```json
   {
-  	"id": 1,
-  	"firstName": "John",
-  	"lastName": "Foe",
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Foe",
     "username": "johnfoe",
     "email": "johnfoe@todo.it"
   }
