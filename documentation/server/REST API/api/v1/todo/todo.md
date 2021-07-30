@@ -322,7 +322,7 @@ List of error codes:
     "status": 404,
     "error": "Not found",
     "message": "Todo not found",
-  	"path": "/api/v1/todo/2"
+    "path": "/api/v1/todo/2"
   }
   ```
 
