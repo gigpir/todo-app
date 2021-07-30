@@ -7,9 +7,9 @@ Contains all the functions that operate on the **Admin** entity
 ### Logic
 
 - It checks if the provided username is already used
-  - if yes, it throws an exception <u>UsernameAlreadyExistException</u>
+  - if yes, it throws an exception [UsernameAlreadyExistException](./Exceptions/UsernameAlreadyExistException.md#-)
 - It checks if the provided email is already used
-  - if yes, it throws an exception <u>EmailAlreadyUsedException</u>
+  - if yes, it throws an exception [EmailAlreadyExistException](./Exceptions/EmailAlreadyExistException.md#-)
 - It adds the role "ROLE_ADMIN" to the Admin entity
 
 ### Authorization
@@ -29,7 +29,7 @@ It takes care of deleting an existing admin
 ### Logic
 
 - It checks that the admin exists
-  - If they does not exist, it throws a <u>AdminNotFoundException</u>
+  - If they does not exist, it throws a [AdminNotFoundException](./Exceptions/AdminNotFoundException.md#-)
 - It removes the admin from the DB
 
 ### Authorization
@@ -63,7 +63,7 @@ It takes as input an id and it returns the corresponding Admin
 ### Logic
 
 - Check if Admin exist
-  - if it doesn't exist, throw <u>AdminNotFoundException</u>
+  - if it doesn't exist, throw [AdminNotFoundException](./Exceptions/AdminNotFoundException.md#-)
 - Return the corresponding Admin
 
 ### Authorization

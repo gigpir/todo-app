@@ -2,6 +2,12 @@
 
 ## Functions
 
+### Manage *its* account
+
+- **Create** Account (registration)
+- **Delete** Account
+- **Get** its own account details 
+
 ### Manage *its* Todos
 
 - Create new **Todo**

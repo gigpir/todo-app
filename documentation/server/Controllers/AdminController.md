@@ -37,7 +37,7 @@ Call the method `createAdmin()` of the [AdminService](../Services/AdminService.m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* UsernameFormatNotValidException, UsernameAlreadyExistsException, EmailAlreadyUsedException -> **409**
+* [UsernameAlreadyExistException](../Services/Exceptions/UsernameAlreadyExistException.md#-), [EmailAlreadyUsedException](,,/Services/Exceptions/EmailAlreadyUsedException.md#-) -> **409**
 
 ```java
 @PostMapping("/")
@@ -58,7 +58,7 @@ Call the method `getAdmin()` of the [AdminService](../Services/AdminService.md#g
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* AdminNotFoundException -> **404**
+* [AdminNotFoundException](,,/Services/Exceptions/AdminNotFoundException.md#-) -> **404**
 
 ```java
 @GetMapping("/{adminId}")
@@ -79,7 +79,7 @@ Call the method `deleteAdmin()` of the [AdminService](../Services/AdminService.m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* AdminNotFoundException -> **404**
+* [AdminNotFoundException](,,/Services/Exceptions/AdminNotFoundException.md#-) -> **404**
 
 ```java
 @DeleteMapping("/{adminId}")

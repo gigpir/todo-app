@@ -22,8 +22,8 @@ Call the method `createTodo()` of the [TodoService](../Services/TodoService.md#c
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* TodoNotFoundException -> **404**
-*  AccessDeniedException -> **403**
+* [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-) -> **404**
+*  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @PostMapping("/")
@@ -42,8 +42,8 @@ Call the method `getTodo()` of the [todoService](../Services/TodoService.md#get-
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoNotFoundException  -> **404**
-- AccessDeniedException -> **403**
+- [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-)  -> **404**
+- [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @GetMapping("/{todoId}")
@@ -62,8 +62,8 @@ Call the method `deleteTodo()` of the [todoService](../Services/TodoService.md#d
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoNotFoundException -> **404**
-- AccessDeniedException -> **403**
+- [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-) -> **404**
+- [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @DeleteMapping("/{todoId}")
@@ -82,8 +82,8 @@ Call the method `modifyTodo()` of the [todoService](../Services/TodoService.md#m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoNotFoundException -> **404**
--  AccessDeniedException -> **403**
+- [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-) -> **404**
+-  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @PutMapping("/{todoId}")
@@ -104,8 +104,8 @@ Call the method `setTodoAsDone()` of the [todoService](../Services/TodoService.m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoNotFoundException -> **404**
-- AccessDeniedException -> **403**
+- [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-) -> **404**
+- [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @PutMapping("/{todoId}/done")
@@ -124,8 +124,8 @@ Call the method `resetTodo()` of the [todoService](../Services/TodoService.md#re
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoNotFoundException ->  **404**
--  AccessDeniedException -> **403**
+- [TodoNotFoundException](../Services/Exceptions/TodoNotFoundException.md#-) ->  **404**
+-  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @PutMapping("/{todoId}/reset")

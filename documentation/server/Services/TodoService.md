@@ -29,13 +29,13 @@ delete an existing todo
 
 - If ROLE is ROLE_ADMIN
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Delete Todo 
 - If ROLE is ROLE_TODOER
   - Check if todoId is assigned to the calling Todoer
-    - if not, return <u>AccessDeniedException</u>
+    - if not, return [AccessDeniedException](./Exceptions/AccessDeniedException.md#-)
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Delete Todo 
 
 ### Authorization
@@ -56,13 +56,13 @@ Return a Todo given its id
 
 - If ROLE is ROLE_ADMIN
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Return Todo 
 - If ROLE is ROLE_TODOER
   - Check if todoId is assigned to the calling Todoer
-    - if not, return <u>AccessDeniedException</u>
+    - if not, return [AccessDeniedException](./Exceptions/AccessDeniedException.md#-)
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Return Todo 
 
 ### Authorization
@@ -83,13 +83,13 @@ TodoDTO getTodo(Long todoId)
 
 - If ROLE is ROLE_ADMIN
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Set done as TRUE
 - If ROLE is ROLE_TODOER
   - Check if todoId is assigned to the calling Todoer
-    - if not, return <u>AccessDeniedException</u>
+    - if not, return [AccessDeniedException](./Exceptions/AccessDeniedException.md#-)
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Set done as TRUE
 
 ### Authorization
@@ -108,13 +108,13 @@ TodoDTO setTodoAsDone(Long todoId)
 
 - If ROLE is ROLE_ADMIN
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Set done as FALSE
 - If ROLE is ROLE_TODOER
   - Check if todoId is assigned to the calling Todoer
-    - if not, return <u>AccessDeniedException</u>
+    - if not, return [AccessDeniedException](./Exceptions/AccessDeniedException.md#-)
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Set done as FALSE
 
 ### Authorization
@@ -133,13 +133,13 @@ TodoDTO resetTodo(Long todoId)
 
 - If ROLE is ROLE_ADMIN
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   -  Modify todo
 - If ROLE is ROLE_TODOER
   - Check if todoId is assigned to the calling Todoer
-    - if not, return <u>AccessDeniedException</u>
+    - if not, return [AccessDeniedException](./Exceptions/AccessDeniedException.md#-)
   - Check if todoId corresponds to an existing Todo
-    - if not return <u>TodoNotFoundException</u>
+    - if not return [TodoNotFoundException](./Exceptions/TodoNotFoundException.md#-)
   - Modify todo
 
 ### Authorization

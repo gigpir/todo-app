@@ -22,7 +22,7 @@ Call the method `createTodoer()` of the [TodoerService](../Services/TodoerServic
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-* UsernameAlreadyExistException, EmailAlreadyUsedException -> **409**
+* [AdminNotFoundException](../Services/Exceptions/AdminNotFoundException.md#-), [EmailAlreadyExistException](../Services/Exceptions/EmailAlreadyExistException.md#-) -> **409**
 
 ```java
 @PostMapping("/")
@@ -56,8 +56,8 @@ Call the method `getTodoer()` of the [todoerService](../Services/TodoerService.m
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoerNotFoundException  -> **404**
--  AccessDeniedException -> **403**
+- [TodoerNotFoundException](../Services/Exceptions/TodoerNotFoundException.md#-)  -> **404**
+-  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @GetMapping("/{todoerId}")
@@ -76,8 +76,8 @@ Call the method `deleteTodoer()` of the [todoerService](../Services/TodoerServic
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoerNotFoundException -> **404**
--  AccessDeniedException -> **403**
+- [TodoerNotFoundException](../Services/Exceptions/TodoerNotFoundException.md#-) -> **404**
+-  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @DeleteMapping("/{todoerId}")
@@ -96,8 +96,8 @@ Call the method `getTodos()` of the [todoerService](../Services/TodoerService.md
 
 Map the following exceptions to the corresponding HTTP status codes:
 
-- TodoerNotFoundException -> **404**
--  AccessDeniedException -> **403**
+- [TodoerNotFoundException](../Services/Exceptions/TodoerNotFoundException.md#-) -> **404**
+-  [AccessDeniedException](../Services/Exceptions/AccessDeniedException.md#-) -> **403**
 
 ```java
 @GetMapping("/{todoerId}/todo")
