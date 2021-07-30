@@ -14,7 +14,7 @@ public class TodoerController{
 
 create a new Todoer
 
-Handle the **POST** request  to the endpoint **/** ([REST API documentation](../REST API/api/v1/todoer/todoer.md#-))
+Handle the **POST** request  to the endpoint **/** ([REST API documentation](../REST%20API/api/v1/todoer/todoer.md#-))
 
 ### Logic
 
@@ -33,7 +33,7 @@ public TodoerDTO createTodoer(@Valid @RequestBody TodoerDTO todoerDTO)
 
 Return the list of all todoers
 
-Handle the **GET** request  to the endpoint **/** ([REST API documentation](../REST API/api/v1/todoer/todoer.md#-))
+Handle the **GET** request  to the endpoint **/** ([REST API documentation](../REST%20API/api/v1/todoer/todoer.md#-))
 
 ### Logic
 
@@ -48,7 +48,7 @@ public List<TodoerDTO> getAllTodoers()
 
 Return the details about one todoer
 
-Handle the **GET** request to the enpoint **/{todoerId}** ([REST API documentation](../REST API/api/v1/todoer/todoer.md#-/))
+Handle the **GET** request to the enpoint **/{todoerId}** ([REST API documentation](../REST%20API/api/v1/todoer/todoer.md#-/))
 
 ### Logic
 
@@ -68,7 +68,7 @@ public TodoerDTO getTodoer(@PathVariable ("todoerId") Long todoerId)
 
 Delete a Todoer 
 
-Handle the **DELETE** request  to the endpoint **/{todoerId}** ([REST API documentation](../REST API/api/v1/todoer/todoer.md#-))
+Handle the **DELETE** request  to the endpoint **/{todoerId}** ([REST API documentation](../REST%20API/api/v1/todoer/todoer.md#-))
 
 ### Logic
 
@@ -88,7 +88,7 @@ public TodoerDTO deleteTodoer(@PathVariable ("todoerId") Long todoerId)
 
 Given a todoer's id, return all the corresponding Todos associated with that id
 
-Handle the **GET** request  to the endpoint **{todoerId}/todo** ([REST API documentation](../REST API/api/v1/todoer/todoer.md#-))
+Handle the **GET** request  to the endpoint **{todoerId}/todo** ([REST API documentation](../REST%20API/api/v1/todoer/todoer.md#-))
 
 ### Logic
 

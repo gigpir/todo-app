@@ -14,7 +14,7 @@ public class TodoController{
 
 create a new Todo
 
-Handle the **POST** request  to the endpoint **/** ([REST API documentation](../REST API/api/v1/todo/todo.md#-))
+Handle the **POST** request  to the endpoint **/** ([REST API documentation](../REST%20API/api/v1/admin/admin.md#-))
 
 ### Logic
 
@@ -34,7 +34,7 @@ public TodoDTO createTodo(@Valid @RequestBody TodoDTO todoDTO)
 
 Return the details about one todo
 
-Handle the **GET** request to the enpoint **/{todoId}** ([REST API documentation](../REST API/api/v1/todo/todo.md#-/))
+Handle the **GET** request to the enpoint **/{todoId}** ([REST API documentation](../REST%20API/api/v1/admin/admin.md#-/))
 
 ### Logic
 
@@ -54,7 +54,7 @@ public TodoDTO getTodo(@PathVariable ("todoId") Long todoId)
 
 delete an extisting todo
 
-Handle the **DELETE** request to the enpoint **/{todoId}** ([REST API documentation](../REST API/api/v1/todo/todo.md#delete-todo))
+Handle the **DELETE** request to the enpoint **/{todoId}** ([REST API documentation](../REST%20API/api/v1/todo/todo.md#delete-todo))
 
 ### Logic
 
@@ -74,7 +74,7 @@ public TodoDTO deleteTodo(@PathVariable ("todoId") Long todoId)
 
 modify todo title and description
 
-Handle the **PUT** request to the enpoint **/{todoId}** ([REST API documentation](../REST API/api/v1/todo/todo.md#modify-todo))
+Handle the **PUT** request to the enpoint **/{todoId}** ([REST API documentation](../REST%20API/api/v1/todo/todo.md#modify-todo))
 
 ### Logic
 
@@ -96,7 +96,7 @@ public TodoDTO modifyTodo(@PathVariable ("todoId") Long todoId, String title, St
 
 change done state of a todo
 
-Handle the **PUT** request to the enpoint **/{todoId}/done** ([REST API documentation](../REST API/api/v1/todo/todo.md#-/))
+Handle the **PUT** request to the enpoint **/{todoId}/done** ([REST API documentation](../REST%20API/api/v1/admin/admin.md#-/))
 
 ### Logic
 
@@ -116,7 +116,7 @@ public TodoDTO setTodoAsDone(@PathVariable ("todoId") Long todoId)
 
 change done state of a todo
 
-Handle the **PUT** request to the enpoint **/{todoId}/reset** ([REST API documentation](../REST API/api/v1/todo/todo.md#-/))
+Handle the **PUT** request to the enpoint **/{todoId}/reset** ([REST API documentation](../REST%20API/api/v1/admin/admin.md#-/))
 
 ### Logic
 
