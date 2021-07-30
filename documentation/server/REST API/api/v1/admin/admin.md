@@ -299,7 +299,7 @@ List of error codes:
     "status": 401,
     "error": "Unauthorized",
     "message": "User is not logged in",
-  	"path": "/api/v1/admin/2"
+    "path": "/api/v1/admin/2"
   }
   ```
 
